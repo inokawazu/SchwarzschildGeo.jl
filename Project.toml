@@ -1,0 +1,7 @@
+name = "SchwarzschildGeo"
+uuid = "b85af7fd-e47c-453a-b49a-7a09dbff2a8a"
+authors = ["Markus-Amano <markus.a.amano@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+DifferentialEquations = "0c46a032-eb83-5123-abaf-570d42b7fbaa"
