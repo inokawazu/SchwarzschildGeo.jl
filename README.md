@@ -16,7 +16,8 @@ using SchwarzschildGeo
 schpic() #uses the default picture
 ```
 
-The output will be an array of RGBs. You can save the output with `save`.
+The output will be an array of RGBs. You can save the output with `Images.save`. 
+The packages `Images` is needed for this.
 
 # Usage
 
