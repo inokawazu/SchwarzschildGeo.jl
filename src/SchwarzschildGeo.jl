@@ -4,7 +4,7 @@ using DifferentialEquations, Images, ProgressMeter
 
 const black = RGB{N0f8}(0,0,0)
 const bh_image_file = joinpath(dirname(@__DIR__),"media","galaxy.jpg")
-const DEFAULT_TSPAN = (0.,10000.)
+const DEFAULT_TSPAN = (0.,100000.)
 const DEFAULT_R0 = 20.0
 const DEFAULT_MAX_R = 10000.
 
@@ -116,7 +116,7 @@ function angletopix(ϕout, θout, imgdim)
 end
 
 function schpic(imgfile=bh_image_file; r0 = DEFAULT_R0, tspan=DEFAULT_TSPAN, 
-		ϕcam=pi, θcam=0.0, ϕ0=0.0)
+		phicam=pi, thetacam=0.0, phi0=0.0)
 
 	img = load(imgfile)
 	imgout = similar(img)
@@ -133,7 +133,7 @@ function schpic(imgfile=bh_image_file; r0 = DEFAULT_R0, tspan=DEFAULT_TSPAN,
 			θin -= j/h*pi
 		end
 
-		ϕout, θout = schview(ϕin - ϕcam, θin - θcam; r0=r0, tspan=tspan, ϕ0=ϕ0)
+		ϕout, θout = schview(ϕin - phicam, θin - thetacam; r0=r0, tspan=tspan, ϕ0=phi0)
 
 		if ϕout == :black
 			imgout[j,i] = black
