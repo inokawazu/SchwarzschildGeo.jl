@@ -22,10 +22,11 @@ The output will be an array of RGBs. You can save the output with `save`.
 
 ```julia
 using SchwarzschildGeo
-schview("<pathtoimagefile>"; r0=<number>) 
+schview("<pathtoimagefile>"; r0=<number greater than one>) 
 #use your own image file with a different r0 which is the radial position
 #of the camera.
 ```
 
 As with the example the output will be an array of RGBs. 
-You can save the output with `save`.
+You can save the output with `save`. 
+`r0` needs to be greater that one because the horizon is located at $r=1$.
