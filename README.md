@@ -6,7 +6,7 @@ Just run the following code in the REPL to install the package.
 
 ```julia
 using Pkg
-Pkg.add("githuburl TBD")
+Pkg.add("https://github.com/inokawazu/SchwarzschildGeo.jl")
 ```
 
 # Example
