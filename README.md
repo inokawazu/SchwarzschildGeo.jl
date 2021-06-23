@@ -13,7 +13,7 @@ Pkg.add("https://github.com/inokawazu/SchwarzschildGeo.jl")
 
 ```julia
 using SchwarzschildGeo
-schview() #uses the default picture
+schpic() #uses the default picture
 ```
 
 The output will be an array of RGBs. You can save the output with `save`.
@@ -22,7 +22,7 @@ The output will be an array of RGBs. You can save the output with `save`.
 
 ```julia
 using SchwarzschildGeo
-schview("<pathtoimagefile>"; r0=<number greater than one>) 
+schpic("<pathtoimagefile>"; r0=<number greater than one>) 
 #use your own image file with a different r0 which is the radial position
 #of the camera.
 ```
