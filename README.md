@@ -1,3 +1,5 @@
+![black_hole_example](./example/blackholeimage.jpg)
+
 # Installation
 
 Just run the following code in the REPL to install the package.
