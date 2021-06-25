@@ -31,3 +31,10 @@ schpic("<pathtoimagefile>"; r0=<number greater than one>)
 As with the example the output will be an array of RGBs. 
 You can save the output with `save`. 
 `r0` needs to be greater that one because the horizon is located at $r=1$.
+
+
+# DoTos
+
+- [ ] Write down an explainer
+- [ ] Check performance
+- [ ] Refactor
