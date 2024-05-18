@@ -1,3 +1,5 @@
+[Go here for updated package](https://github.com/inokawazu/GRTracing.jl)
+
 ![black_hole_example](./example/blackholeimage.jpg)
 
 # Installation
